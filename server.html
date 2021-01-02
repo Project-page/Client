@@ -14,6 +14,20 @@
     #input { align:center;border-bottom: 2px solid #ccc; background-color: #fff; padding: 0.25em; outline: 0; }
     #input::before { content: ""; }
   </style>
+  <style>
+    .button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+    </style>
   <script>
     function log(message) {
       document.getElementById("log").textContent = message + "\n";
@@ -84,7 +98,7 @@
 
 <script>
 
-  var b = Bugout("lip");
+  var b = Bugout("EyeServer");
  
   b.on("message", function(address, message) {
     log(message);
@@ -109,6 +123,32 @@
 
 
 </script>
+<!--------------------------------MYDIV-------------------------------------------------------->
+<div class="row">
+  <div class="column">
+    <ol>
+        <li><p>
+        <button id ="taskbutton1" class="button" >Task1</button>
+        </p></li>
+        <li><p>
+        <button id="taskbutton2" class="button" >Task2</button>
+        </p></li>
+        <li><p>
+        <button id="taskbutton3" class="button" >Task3</button>
+        </p></li>
+        <li><p>
+        <button id="taskbutton4" class="button" >Task4</button>
+        </p></li>
+        <li><p>
+        <button id="taskbutton5" class="button" >Task5</button>
+        </p></li>
+    </ol>
+  </div>
+</div>
+
+<!--------------------------------MYDIV-------------------------------------------------------->
+
+
  <div class="row">
         <div class="column">
             <h2>Input</h2>
@@ -254,6 +294,62 @@ document.getElementById("button1").onclick = function(ev) {
   }
   
 </script>
+
+<!---------------------------------My Script--------------------------------->
+<script>
+  document.getElementById("taskbutton1").onclick = function(ev) {
+      if (ev.button == 0) {
+        if (b.lastwirecount) {
+      ev.target.textContent="1 is clicked"
+          b.send(ev.target.textContent);
+          ev.target.textContent = "Send";
+        }
+        ev.preventDefault();
+      }
+    }
+  
+    document.getElementById("taskbutton2").onclick = function(ev) {
+      if (ev.button == 0) {
+        if (b.lastwirecount) {
+      ev.target.textContent="2 is clicked"
+          b.send(ev.target.textContent);
+          ev.target.textContent = "Send";
+        }
+        ev.preventDefault();
+      }
+    }
+    document.getElementById("taskbutton3").onclick = function(ev) {
+      if (ev.button == 0) {
+        if (b.lastwirecount) {
+      ev.target.textContent="3 is clicked"
+          b.send(ev.target.textContent);
+          ev.target.textContent = "Send";
+        }
+        ev.preventDefault();
+      }
+    }
+    document.getElementById("taskbutton4").onclick = function(ev) {
+      if (ev.button == 0) {
+        if (b.lastwirecount) {
+      ev.target.textContent="4 is clicked"
+          b.send(ev.target.textContent);
+          ev.target.textContent = "Send";
+        }
+        ev.preventDefault();
+      }
+    }
+    document.getElementById("taskbutton5").onclick = function(ev) {
+      if (ev.button == 0) {
+        if (b.lastwirecount) {
+      ev.target.textContent="5 is clicked"
+          b.send(ev.target.textContent);
+          ev.target.textContent = "Send";
+        }
+        ev.preventDefault();
+      }
+    }
+  
+  </script>
 
 
 </body>
