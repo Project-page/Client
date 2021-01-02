@@ -149,152 +149,6 @@
 <!--------------------------------MYDIV-------------------------------------------------------->
 
 
- <div class="row">
-        <div class="column">
-            <h2>Input</h2>
-			<ol>
-            <li><p><input type="text" size="30" value="my favorite place to visit">
-					<button id="button1">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="watch out for low flying objects">
-					<button id="button2">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="hair gel is very greasy">
-					<button id="button3">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="he is still on our team">
-					<button id="button4">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="the dow jones index has risen">
-					<button id="button5">Send</button>
-					</p></li>
-			</ol>
-        </div>
-
-        <div class="column">
-			<h2>Output</h2>
-			<ol>
-            <li><p><input type="text" size="30" value="my favorite place to visit">
-					<button id="buttonn1">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="watch out for low objects">
-					<button id="buttonn2">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="hair gel is very greasy">
-					<button id="buttonn3">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="he is still on our team">
-					<button id="buttonn4">Send</button>
-					</p></li>
-			<li><p><input type="text" size="30" value="the dow jones index has risen">
-					<button id="buttonn5">Send</button>
-					</p></li>
-			</ol>
-        </div>
-    </div>
-
-<script>
-document.getElementById("button1").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="my favorite place to visit"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-  document.getElementById("button2").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="watch out for low flying objects"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-    document.getElementById("button3").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="hair gel is very greasy"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-  document.getElementById("button4").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="he is still on our team"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-
-  document.getElementById("buttonn1").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="my favorite place to visit"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-  document.getElementById("buttonn2").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="watch out for low objects"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-    document.getElementById("buttonn3").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="hair gel is very greasy"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-  document.getElementById("buttonn4").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="he is still on our team"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-    document.getElementById("buttonn5").onclick = function(ev) {
-    if (ev.button == 0) {
-      if (b.lastwirecount) {
-		ev.target.textContent="the dow jones index has risen"
-        b.send(ev.target.textContent);
-        ev.target.textContent = "Send";
-      }
-      ev.preventDefault();
-    }
-  }
-  
-</script>
-
 <!---------------------------------My Script--------------------------------->
 <script>
   document.getElementById("taskbutton1").onclick = function(ev) {
@@ -302,7 +156,7 @@ document.getElementById("button1").onclick = function(ev) {
         if (b.lastwirecount) {
       ev.target.textContent="1 is clicked"
           b.send(ev.target.textContent);
-          ev.target.textContent = "Send";
+          //ev.target.textContent = "Send";
         }
         ev.preventDefault();
       }
@@ -313,7 +167,7 @@ document.getElementById("button1").onclick = function(ev) {
         if (b.lastwirecount) {
       ev.target.textContent="2 is clicked"
           b.send(ev.target.textContent);
-          ev.target.textContent = "Send";
+          //ev.target.textContent = "Send";
         }
         ev.preventDefault();
       }
@@ -323,7 +177,7 @@ document.getElementById("button1").onclick = function(ev) {
         if (b.lastwirecount) {
       ev.target.textContent="3 is clicked"
           b.send(ev.target.textContent);
-          ev.target.textContent = "Send";
+          //ev.target.textContent = "Send";
         }
         ev.preventDefault();
       }
@@ -333,7 +187,7 @@ document.getElementById("button1").onclick = function(ev) {
         if (b.lastwirecount) {
       ev.target.textContent="4 is clicked"
           b.send(ev.target.textContent);
-          ev.target.textContent = "Send";
+          //ev.target.textContent = "Send";
         }
         ev.preventDefault();
       }
@@ -343,7 +197,7 @@ document.getElementById("button1").onclick = function(ev) {
         if (b.lastwirecount) {
       ev.target.textContent="5 is clicked"
           b.send(ev.target.textContent);
-          ev.target.textContent = "Send";
+          //ev.target.textContent = "Send";
         }
         ev.preventDefault();
       }
