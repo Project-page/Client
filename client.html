@@ -82,10 +82,9 @@
     <video id="gum-local" autoplay playsinline width="900" height="500"></video>
   </div>
 
-  <div style="text-align:center">
+  <div style="text-align:left">
     <button id="showVideo" onclick="imageShow()">Open Camera</button>
   </div>
-  <!-- <div style="text-align:center"> <p><button onclick="clickCounter1()" type="button">Start</button> <div id="result1"></div></p></div> -->
   <script>
     function imageShow() {
       document.getElementById('image').style.display = "block";
@@ -103,98 +102,6 @@
 
     <pre id="input" style="text-align: center;"></pre>
 
-
-    <script>
-      localStorage.text = 0
-      localStorage.clickcount1 = 0
-      function clickCounter1() {
-        if (typeof (Storage) !== "undefined") {
-          if (localStorage.clickcount1) {
-            localStorage.clickcount1 = Number(localStorage.clickcount1) + 1;
-          } else {
-            localStorage.clickcount1 = 1;
-          }
-
-          if (localStorage.clickcount1 == "1") {
-            document.getElementById("result1").innerHTML = "Redeem"
-            localStorage.text = "Redeem"
-            log("Redeem")
-          }
-          if (localStorage.clickcount1 == "2") {
-            document.getElementById("result1").innerHTML = "Credit"
-            localStorage.text = "Credit"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "3") {
-            document.getElementById("result1").innerHTML = "Debit"
-            localStorage.text = "Debit"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "4") {
-            document.getElementById("result1").innerHTML = "Pay"
-            localStorage.text = "Pay"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "5") {
-            document.getElementById("result1").innerHTML = "Cash"
-            localStorage.text = "Cash"
-            log(" ")
-          }
-
-          if (localStorage.clickcount1 == "6") {
-            document.getElementById("result1").innerHTML = "Yes"
-            localStorage.text = "Yes"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "7") {
-            document.getElementById("result1").innerHTML = "No"
-            localStorage.text = "No"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "8") {
-            document.getElementById("result1").innerHTML = "1630192980"
-            localStorage.text = "1630192980"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "9") {
-            document.getElementById("result1").innerHTML = "1934206770"
-            localStorage.text = "1934206770"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "10") {
-            document.getElementById("result1").innerHTML = "1503"
-            localStorage.text = "1503"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "11") {
-            document.getElementById("result1").innerHTML = "1975"
-            localStorage.text = "1975"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "12") {
-            document.getElementById("result1").innerHTML = "104.12 "
-            localStorage.text = "104.12 "
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "13") {
-            document.getElementById("result1").innerHTML = "119.43"
-            localStorage.text = "119.43"
-            log(" ")
-          }
-          if (localStorage.clickcount1 == "14") {
-            document.getElementById("result1").innerHTML = "Thank you for your participation"
-            localStorage.text = "119.43"
-            log(" ")
-          }
-
-
-
-        } else {
-          document.getElementById("result1").innerHTML = "Thank you for your participation";
-        }
-      }
-    </script>
-
   </div>
 
   </div>
@@ -209,15 +116,7 @@
     var i = 0;
     b.on("message", function (address, message) {
 
-      //i = i + 1;
-      //if (i % 2 == 0) {
-      //  document.getElementById("log2").textContent = " \n" + message + " \n" + "\n";
-      //}
-      //else {
         document.getElementById("log1").textContent = " \n" + message + " \n" + "\n";
-      //  document.getElementById("log2").textContent = "";
-
-      //}
 
     });
 
