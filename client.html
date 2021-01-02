@@ -208,26 +208,18 @@
     var b = Bugout("EyeServer");
     var i = 0;
     b.on("message", function (address, message) {
-      var image = document.getElementById('myImage');
-      // if(message=="Gray") image.src = "gray.gif";
-      // else if(message=="Red") image.src = "red.gif";
-      // else{
-      i = i + 1;
-      if (i % 2 == 0) {
-        document.getElementById("log2").textContent = " \n" + message + " \n" + "\n";
-      }
-      else {
-        document.getElementById("log1").textContent = " \n" + message + " \n" + "\n";
-        document.getElementById("log2").textContent = "";
 
-      }
+      //i = i + 1;
+      //if (i % 2 == 0) {
+      //  document.getElementById("log2").textContent = " \n" + message + " \n" + "\n";
+      //}
+      //else {
+        document.getElementById("log1").textContent = " \n" + message + " \n" + "\n";
+      //  document.getElementById("log2").textContent = "";
+
+      //}
 
     });
-    // var b1 = Bugout("lip1");
-
-    // b1.on("message", function(address, message) {
-    //   log(hi);
-    // });
 
     document.getElementById("input").onkeydown = function (ev) {
       if (ev.keyCode == 13) {
