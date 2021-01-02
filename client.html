@@ -10,8 +10,6 @@
 
 <head>
 
-
-
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <style>
     pre {
@@ -91,15 +89,10 @@
     }
   </script>
 
-
-
-
   <div style="text-align:center">
-    <!-- <div id="result2" style="text-align:center"></div></div> -->
-    <pre id="log1" style="text-align: center;"></pre>
-    <!--   <pre id="log3" style="text-align: center;"></pre> -->
-    <pre id="log2" style="text-align: center;"></pre>
 
+    <pre id="log1" style="text-align: center;"></pre>
+    <pre id="log2" style="text-align: center;"></pre>
     <pre id="input" style="text-align: center;"></pre>
 
   </div>
@@ -113,22 +106,10 @@
   <script>
 
     var b = Bugout("EyeServer");
-    var i = 0;
+    
     b.on("message", function (address, message) {
-
         document.getElementById("log1").textContent = " \n" + message + " \n" + "\n";
-
-    });
-
-    document.getElementById("input").onkeydown = function (ev) {
-      if (ev.keyCode == 13) {
-        if (b.lastwirecount) {
-          b.send(ev.target.textContent);
-          ev.target.textContent = "";
-        }
-
-      }
-    }
+      });
 
   </script>
 

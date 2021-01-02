@@ -104,24 +104,6 @@
     log(message);
   });
 
-  document.getElementById("input").onkeydown = function(ev) {
-    if (ev.keyCode == 13) {
-      if (b.lastwirecount) {
-        b.send(ev.target.textContent);
-        ev.target.textContent = "";
-      }
-      ev.preventDefault();
-    }
-
-    if (ev.keyCode == 38) {
-      if (b.lastwirecount) {
-        b.send("hi");
-        ev.target.textContent = "";
-      }   
-    }
-  }
-
-
 </script>
 <!--------------------------------MYDIV-------------------------------------------------------->
 <div class="row">
