@@ -110,19 +110,19 @@
   <div class="column">
     <ol>
         <li><p>
-        <button id ="taskbutton1" class="button" >Task1</button>
+        <button id ="taskbutton1" class="button" >left look</button>
         </p></li>
         <li><p>
-        <button id="taskbutton2" class="button" >Task2</button>
+        <button id="taskbutton2" class="button" >right blink</button>
         </p></li>
         <li><p>
-        <button id="taskbutton3" class="button" >Task3</button>
+        <button id="taskbutton3" class="button" >left yow</button>
         </p></li>
         <li><p>
-        <button id="taskbutton4" class="button" >Task4</button>
+        <button id="taskbutton4" class="button" >blink</button>
         </p></li>
         <li><p>
-        <button id="taskbutton5" class="button" >Task5</button>
+        <button id="taskbutton5" class="button" >pitch</button>
         </p></li>
     </ol>
   </div>
@@ -136,9 +136,9 @@
   document.getElementById("taskbutton1").onclick = function(ev) {
       if (ev.button == 0) {
         if (b.lastwirecount) {
-      ev.target.textContent="1 is clicked"
+      ev.target.textContent="left look detected"
           b.send(ev.target.textContent);
-          //ev.target.textContent = "Send";
+          ev.target.textContent = "left look";
         }
         ev.preventDefault();
       }
@@ -147,9 +147,9 @@
     document.getElementById("taskbutton2").onclick = function(ev) {
       if (ev.button == 0) {
         if (b.lastwirecount) {
-      ev.target.textContent="2 is clicked"
+      ev.target.textContent="right eye blink detected"
           b.send(ev.target.textContent);
-          //ev.target.textContent = "Send";
+          ev.target.textContent = "right blink";
         }
         ev.preventDefault();
       }
@@ -157,9 +157,9 @@
     document.getElementById("taskbutton3").onclick = function(ev) {
       if (ev.button == 0) {
         if (b.lastwirecount) {
-      ev.target.textContent="3 is clicked"
+      ev.target.textContent="left yow detected"
           b.send(ev.target.textContent);
-          //ev.target.textContent = "Send";
+          ev.target.textContent = "left yow";
         }
         ev.preventDefault();
       }
@@ -167,9 +167,9 @@
     document.getElementById("taskbutton4").onclick = function(ev) {
       if (ev.button == 0) {
         if (b.lastwirecount) {
-      ev.target.textContent="4 is clicked"
+      ev.target.textContent="blink detected"
           b.send(ev.target.textContent);
-          //ev.target.textContent = "Send";
+          ev.target.textContent = "blink";
         }
         ev.preventDefault();
       }
@@ -177,9 +177,9 @@
     document.getElementById("taskbutton5").onclick = function(ev) {
       if (ev.button == 0) {
         if (b.lastwirecount) {
-      ev.target.textContent="5 is clicked"
+      ev.target.textContent="pitch detected"
           b.send(ev.target.textContent);
-          //ev.target.textContent = "Send";
+          ev.target.textContent = "pitch";
         }
         ev.preventDefault();
       }
